@@ -21,7 +21,9 @@ class Xhprof
 
         $xhprof_runs = new \XHProfRuns_Default();
 
-        $run_id = $xhprof_runs->save_run($xhprof_data, $request->path());
+        $requestPath = str_replace('/', '_', $request->path());
+
+        $run_id = $xhprof_runs->save_run($xhprof_data, $requestPath);
 
         //todo::将这个数据存储到数据库上面
     }
