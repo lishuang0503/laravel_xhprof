@@ -1,0 +1,26 @@
+{
+  "name": "lishuang/laravel-xhprof",
+  "description": "copy  zehua/laravel-xhprof",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "lishuang",
+      "email": "sli3@i9i8.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Zehua\\LaravelXhprof\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zehua\\LaravelXhprof\\LaravelXhprofServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {}
+}
